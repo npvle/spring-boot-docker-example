@@ -1,19 +1,3 @@
-#build command
-###docker build --no-cache -t np-pfs-api .
-#runcommand
-###docker run --add-host=hostdockerinternal:192.168.99.1 -it -p 8080:8080 -e JAVA_OPTS="$JAVA_OPTS -Dspring.profiles.active=localdocker" np-pfs-api
-#clean
-###docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
-#upload to docker hub
-###docker tag np-pfs-api vledocker91/np-pfs-api:1.0.0
-###docker push vledocker91/np-pfs-api:1.0.0
-
-#aws command
-#aws ecr get-login --no-include-email --region ap-northeast-1
-#docker build --no-cache -t spring-boot-docker-example .
-#docker tag spring-boot-docker-example:latest 898942717313.dkr.ecr.ap-northeast-1.amazonaws.com/spring-boot-docker-example:1.0.0.15
-#docker push 898942717313.dkr.ecr.ap-northeast-1.amazonaws.com/spring-boot-docker-example:1.0.0.15
-
 FROM centos:centos7
 
 #setting locate
