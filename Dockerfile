@@ -10,9 +10,9 @@
 
 #aws command
 #aws ecr get-login --no-include-email --region ap-northeast-1
-#docker build --no-cache -t np-pfs-api .
-#docker tag np-pfs-api:latest 898942717313.dkr.ecr.ap-northeast-1.amazonaws.com/np-pfs-api:1.0.0.15
-#docker push 898942717313.dkr.ecr.ap-northeast-1.amazonaws.com/np-pfs-api:1.0.0.15
+#docker build --no-cache -t spring-boot-docker-example .
+#docker tag spring-boot-docker-example:latest 898942717313.dkr.ecr.ap-northeast-1.amazonaws.com/spring-boot-docker-example:1.0.0.15
+#docker push 898942717313.dkr.ecr.ap-northeast-1.amazonaws.com/spring-boot-docker-example:1.0.0.15
 
 FROM centos:centos7
 
